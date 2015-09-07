@@ -20,8 +20,8 @@
     </dependencies>
 	</metadata>
 	<files>
-		<file src="src\Abc.Zebus.Directory.Cassandra\bin\$configuration$\Abc.Zebus.Directory.Cassandra.dll" target="lib\net45\" />
-		<file src="src\Abc.Zebus.Directory.Cassandra\bin\$configuration$\Abc.Zebus.Directory.Cassandra.pdb" target="lib\net45\" />
+		<file src="src\Abc.Zebus.Directory.Cassandra\bin\$configuration$\Abc.Zebus.Directory.Cassandra.dll" target="lib\net46\" />
+		<file src="src\Abc.Zebus.Directory.Cassandra\bin\$configuration$\Abc.Zebus.Directory.Cassandra.pdb" target="lib\net46\" />
     
 		<file src="src\Abc.Zebus.Directory.Cassandra\**\*.cs" target="src" />
 	</files>
