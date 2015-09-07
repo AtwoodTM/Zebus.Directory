@@ -4,3 +4,10 @@ before_build:
 - nuget restore src/Abc.Zebus.Directory.sln
 build:
   verbosity: minimal
+test:
+  assemblies: Abc.Zebus.Directory.Tests.dll
+  categories:
+    except:
+    - ManualOnly
+cache:
+  - src\packages -> **\packages.config 
