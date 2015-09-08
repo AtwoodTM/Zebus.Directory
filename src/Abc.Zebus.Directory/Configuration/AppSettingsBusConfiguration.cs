@@ -12,8 +12,8 @@ namespace Abc.Zebus.Directory.Configuration
             IsDirectoryPickedRandomly = AppSettings.Get("Bus.Directory.PickRandom", true);
         }
 
-        public string[] DirectoryServiceEndPoints { get { return new string[0]; } }
-        public bool IsPersistent { get { return false; } }
+        public string[] DirectoryServiceEndPoints => new string[0];
+        public bool IsPersistent => false;
 
         public TimeSpan RegistrationTimeout { get; private set; }
         public TimeSpan StartReplayTimeout { get; private set; }

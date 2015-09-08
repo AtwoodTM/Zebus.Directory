@@ -31,10 +31,7 @@ namespace Abc.Zebus.Directory.DeadPeerDetection
         public PeerDescriptor Descriptor { get; set; }
         public DeadPeerStatus Status { get; private set; }
 
-        public bool IsUp
-        {
-            get { return Descriptor.Peer.IsUp; }
-        }
+        public bool IsUp => Descriptor.Peer.IsUp;
 
         public bool WasRestarted
         {

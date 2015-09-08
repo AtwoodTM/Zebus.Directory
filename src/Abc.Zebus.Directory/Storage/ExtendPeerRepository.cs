@@ -35,7 +35,7 @@ namespace Abc.Zebus.Directory.Storage
         {
             var peerDescriptor = repository.Get(peerId);
             if (peerDescriptor == null)
-                throw new InvalidOperationException(string.Format("The specified Peer ({0}) does not exist.", peerId));
+                throw new InvalidOperationException($"The specified Peer ({peerId}) does not exist.");
 
             if (peerDescriptor.TimestampUtc > timestampUtc)
                 return null;
