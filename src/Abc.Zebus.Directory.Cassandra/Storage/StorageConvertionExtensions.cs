@@ -42,9 +42,7 @@ namespace Abc.Zebus.Directory.Cassandra.Storage
 
         public static PeerDescriptor ToPeerDescriptor(this StoragePeer storagePeer, IEnumerable<Subscription> peerDynamicSubscriptions)
         {
-            if (storagePeer == null)
-                return null;
-            if (storagePeer.StaticSubscriptionsBytes == null)
+            if (storagePeer?.StaticSubscriptionsBytes == null)
                 return null;
             var staticSubscriptions = DeserializeSubscriptions(storagePeer.StaticSubscriptionsBytes);
             var allSubscriptions = staticSubscriptions.Concat(peerDynamicSubscriptions).Distinct().ToArray();
